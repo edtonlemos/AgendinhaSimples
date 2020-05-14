@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Agenda</string>
+    <string name="aactivity_lista_alunos_vazia">Nenhum aluno cadastrado :(</string>
 </resources>
