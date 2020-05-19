@@ -42,4 +42,10 @@ public class AlunoDAO {
         }
         return null;
     }
+
+    public void remove(Aluno aluno) {
+        Aluno alunoSelecionado = buscaAlunoPelaId(aluno);
+        if (alunoSelecionado != null)
+            alunos.remove(alunoSelecionado);
+    }
 }
