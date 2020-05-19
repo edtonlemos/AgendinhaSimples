@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import br.com.alura.agenda.R;
 import br.com.alura.agenda.dao.AlunoDAO;
@@ -70,8 +71,10 @@ public class FormularioAlunoActivity extends AppCompatActivity {
         preencheAluno();
         if (aluno.temIdValida()) {
             dao.edita(aluno);
+            Toast.makeText(this, "O Aluno "+aluno.getNome()+" foi atualizado com sucesso :)", Toast.LENGTH_LONG).show();
         } else {
             dao.salva(aluno);
+            Toast.makeText(this, "O Aluno "+aluno.getNome()+" foi salvo com sucesso :)", Toast.LENGTH_LONG).show();
         }
         finish();
     }
