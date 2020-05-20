@@ -51,16 +51,15 @@ public class ListaAlunosAdapter extends BaseAdapter {
         return viewCriada;
     }
 
-    public void clear() {
-        this.alunos.clear();
-    }
-
-    public void addAll(List<Aluno> todos) {
-        this.alunos.addAll(todos);
-    }
-
     public void remove(Aluno aluno) {
         this.alunos.remove(aluno);
+        notifyDataSetChanged();
+    }
+
+    public void atualiza(List<Aluno> alunos) {
+        this.alunos.clear();
+        this.alunos.addAll(alunos);
+        notifyDataSetChanged();
     }
 }
 
