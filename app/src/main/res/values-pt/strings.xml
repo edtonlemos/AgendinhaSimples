@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Agendinha</string>
     <string name="formulario_hint_nome" >Nome</string>
     <string name="formulario_hint_telefone" >Telefone</string>
     <string name="formulario_hint_e_mail" >E-mail</string>
     <string name="botao_salvar_aluno" >Salvar aluno</string>
     <string name="lista_alunos_menu_remover" >Remover</string>
+    <string name="app_name">Agendinha</string>
 </resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="formulario_hint_nome">Nombre</string>
+    <string name="formulario_hint_telefone">Teléfono</string>
+    <string name="formulario_hint_e_mail">Correo Electrónico</string>
+    <string name="botao_salvar_aluno">Salvar Estudiante</string>
+    <string name="lista_alunos_menu_remover">Para Eliminar</string>
+    <string name="app_name">Agendita</string>
+</resources>

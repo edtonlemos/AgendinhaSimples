@@ -5,6 +5,7 @@ android {
     defaultConfig {
         applicationId "br.com.alura.agenda"
         minSdkVersion 19
+        //noinspection OldTargetApi
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"

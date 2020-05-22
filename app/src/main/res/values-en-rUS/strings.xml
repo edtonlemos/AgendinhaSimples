@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Agenda</string>
+    <string name="app_name">Little Schedule</string>
     <string name="formulario_hint_nome">Name</string>
     <string name="formulario_hint_telefone">Phone</string>
     <string name="formulario_hint_e_mail">Mail</string>
