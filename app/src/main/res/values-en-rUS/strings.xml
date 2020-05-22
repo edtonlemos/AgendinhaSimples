@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Agenda</string>
+    <string name="formulario_hint_nome">Name</string>
+    <string name="formulario_hint_telefone">Phone</string>
+    <string name="formulario_hint_e_mail">Mail</string>
+    <string name="botao_salvar_aluno">Save Student</string>
+    <string name="lista_alunos_menu_remover">Remove</string>
+</resources>

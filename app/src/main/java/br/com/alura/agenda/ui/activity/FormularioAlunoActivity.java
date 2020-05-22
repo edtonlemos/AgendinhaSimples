@@ -86,7 +86,6 @@ public class FormularioAlunoActivity extends AppCompatActivity {
     }
 
 
-    @NonNull
     private void preencheAluno() {
         String nome = campoNome.getText().toString();
         String telefone = campoTelefone.getText().toString();

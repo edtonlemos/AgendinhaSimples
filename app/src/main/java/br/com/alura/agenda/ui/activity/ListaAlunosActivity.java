@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import br.com.alura.agenda.R;
 import br.com.alura.agenda.dao.AlunoDAO;
@@ -104,6 +105,7 @@ public class ListaAlunosActivity extends AppCompatActivity {
     private void remove(Aluno aluno) {
         dao.remove(aluno);
         adapter.remove(aluno);
+        Toast.makeText(this, "Aluno removido!", Toast.LENGTH_SHORT).show();
     }
 
     private void configuraCliquePorItem(ListView listaDeAlunos) {
