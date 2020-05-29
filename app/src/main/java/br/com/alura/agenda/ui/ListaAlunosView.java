@@ -2,7 +2,7 @@ package br.com.alura.agenda.ui;
 
 import android.content.Context;
 import android.content.DialogInterface;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -15,12 +15,14 @@ import br.com.alura.agenda.ui.adapter.ListaAlunosAdapter;
 
 public class ListaAlunosView {
 
-    private ListaAlunosAdapter adapter;
-    private Context contexto;
-    private final AlunoDAO dao = new AlunoDAO();
+    private final ListaAlunosAdapter adapter;
+    private final Context contexto;
+    private final AlunoDAO dao;
 
     public ListaAlunosView(Context contexto) {
         this.contexto = contexto;
+        this.adapter = new ListaAlunosAdapter(contexto);
+        this.dao = new AlunoDAO();
     }
 
     public void confirmaRemocao(final MenuItem item) {
@@ -49,14 +51,13 @@ public class ListaAlunosView {
         adapter.atualiza(dao.todos());
     }
 
-    public void remove(Aluno aluno) {
+    private void remove(Aluno aluno) {
         dao.remove(aluno);
         adapter.remove(aluno);
         Toast.makeText(contexto, "Aluno removido!", Toast.LENGTH_SHORT).show();
     }
 
     public void configuraAdapter(ListView listaDeAlunos) {
-        adapter = new ListaAlunosAdapter(contexto);
         listaDeAlunos.setAdapter(adapter);
     }
 
