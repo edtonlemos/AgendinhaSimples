@@ -1,5 +1,6 @@
 package br.com.alura.agenda.ui.adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -40,7 +41,7 @@ public class ListaAlunosAdapter extends BaseAdapter {
 
     @Override
     public View getView(int posicao, View view, ViewGroup viewGroup) {
-        View viewCriada = LayoutInflater
+        @SuppressLint("ViewHolder") View viewCriada = LayoutInflater
                 .from(contexto)
                 .inflate(R.layout.item_aluno, viewGroup, false);
 
